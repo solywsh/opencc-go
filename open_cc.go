@@ -3,8 +3,8 @@ package opencc
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/solywsh/opencc-go/occ"
 	"io/ioutil"
-	"opencc-go/occ"
 	"path"
 	"path/filepath"
 	"reflect"

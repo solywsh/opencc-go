@@ -1,4 +1,4 @@
-module opencc-go
+module github.com/solywsh/opencc-go
 
 go 1.19
 
