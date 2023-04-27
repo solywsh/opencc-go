@@ -1,6 +1,11 @@
 # OpenCC-go
 golang 简体繁体中文互转
 
+项目来自:
+
+https://github.com/ApesPlan/prefixtree-OpenCC
+
+https://github.com/ApesPlan/OpenCC-go
 
 ## go mod demo
 
@@ -9,7 +14,7 @@ golang 简体繁体中文互转
     import (
         "fmt"
 
-        ccgo "github.com/ApesPlan/OpenCC-go"
+        ccgo "github.com/solywsh/opencc-go"
     )
 
     func main() {
@@ -38,9 +43,14 @@ golang 简体繁体中文互转
         // fmt.Println(out)
     }
 
-### 使用包的时候，https://github.com/BYVoid/OpenCC有最新的简体繁体互转的配置文件和字典文件
-资源路径 OpenCC/data/config/*.json 和 OpenCC/data/dictionary/*.txt 
-可根据实际情况替换本包的 config/*.json 和 dictionary/*.txt 
+### 最新资源
+[opencc](https://github.com/BYVoid/OpenCC)有最新的简体繁体互转的配置文件和字典文件
+
+资源路径:
+OpenCC/data/config/*.json
+
+OpenCC/data/dictionary/*.txt 
+
 
 OpenCC/data/config/*.json文件中 默认匹配的是.ocd2文件 （"type": "ocd2", "file": "TSPhrases.ocd2"），全部替换为txt即可
 

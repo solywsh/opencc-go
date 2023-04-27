@@ -4,13 +4,12 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"opencc-go/occ"
 	"path"
 	"path/filepath"
 	"reflect"
 	"runtime"
 	"strings"
-
-	occ "github.com/ApesPlan/prefixtree-OpenCC"
 )
 
 // s2t, t2s, s2tw, tw2s, s2hk, hk2s, s2twp, tw2sp, t2tw, hk2t, t2hk, t2jp, jp2t, tw2t
@@ -79,7 +78,7 @@ type OpenCC struct {
 // Supported conversions: s2t, t2s, s2tw, tw2s, s2hk, hk2s, s2twp, tw2sp, t2tw, hk2t, t2hk, t2jp, jp2t, tw2t
 func New(conversion string) (*OpenCC, error) {
 	if strings.TrimSpace(conversion) == "" {
-		return nil, fmt.Errorf("Please select a conversion mode: %s", supportedConversions)
+		return nil, fmt.Errorf("please select a conversion mode: %s", supportedConversions)
 	}
 	if _, has := conversions[conversion]; !has {
 		return nil, fmt.Errorf("%s The conversion mode does not exist", conversion)
