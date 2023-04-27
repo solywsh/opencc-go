@@ -71,24 +71,3 @@ s2t, t2s, s2tw, tw2s, s2hk, hk2s, s2twp, tw2sp, t2tw, hk2t, t2hk, t2jp, jp2t, tw
 12. t2jp ==> Traditional Chinese Characters (Kyūjitai) to New Japanese Kanji (Shinjitai) 繁體（OpenCC 標準，舊字體）到日文新字體
 13. jp2t ==> New Japanese Kanji (Shinjitai) to Traditional Chinese Characters (Kyūjitai) 日文新字體到繁體（OpenCC 標準，舊字體）
 14. tw2t ==> Traditional Chinese (Taiwan standard) to Traditional Chinese 臺灣正體到繁體（OpenCC 標準）
-
-
-### 如果有新添加的 需要到源码包open_cc.go文件中修改如下常量即可：
-    supportedConversions = "s2t, t2s, s2tw, tw2s, s2hk, hk2s, s2twp, tw2sp, t2tw, hk2t, t2hk, t2jp, jp2t, tw2t"
-
-    conversions          = map[string]struct{}{
-        "s2t":   {},
-        "t2s":   {},
-        "s2tw":  {},
-        "tw2s":  {},
-        "s2hk":  {},
-        "hk2s":  {},
-        "s2twp": {},
-        "tw2sp": {},
-        "t2tw":  {},
-        "hk2t":  {},
-        "t2hk":  {},
-        "t2jp":  {},
-        "jp2t":  {},
-        "tw2t":  {},
-	}
